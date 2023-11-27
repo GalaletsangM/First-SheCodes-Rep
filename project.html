@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn How To Play Piano</title>
+    <style>
+      div {
+        display: block;
+        margin: 30px auto;
+        padding: 30px;
+        background-color: rgb(202, 237, 243);
+        border-radius: 20px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+
+      hr {
+        border-color: red;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: 20px auto;
+        padding: 5px;
+      }
+
+      .learn {
+        font-size: 25px;
+        text-align: center;
+      }
+
+      li {
+        font-size: 25px;
+        padding: 10px 15px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .C {
+        margin: 0 25px;
+        color: rgb(29, 106, 173);
+      }
+
+      .G {
+        margin: 0 25px;
+        color: rgb(245, 128, 138);
+      }
+
+      .Am {
+        margin: 0 25px;
+        color: rgb(10, 193, 230);
+      }
+
+      .F {
+        margin: 0 25px;
+        color: rgb(231, 25, 193);
+      }
+
+      a {
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .practice {
+        font-size: 25px;
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        border-color: rgb(191, 116, 19);
+        background-color: rgb(128, 6, 149);
+        color: white;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .coder {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Piano Basics</h1>
+      <hr />
+      <h2>🎹 Start learning today 🎹</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/101/306/original/Big-Four-Chords.jpg?1697736476"
+        alt="Four Basic Piano chords"
+        width="500px"
+      />
+      <h3 class="learn"><em>Lets learn more about the chords☺️</em></h3>
+      <ul>
+        <li class="C">
+          <a
+            class="C"
+            href="https://www.piano-lessons-info.com/Cmajorchord.html"
+            target="_blank"
+            >C chord</a
+          >
+        </li>
+        <li class="G">
+          <a
+            class="G"
+            href="https://www.piano-lessons-info.com/gmajorchords.html"
+            target="_blank"
+            >G chord</a
+          >
+        </li>
+        <li class="Am">
+          <a
+            class="Am"
+            href="https://www.piano-lessons-info.com/ampianochord.html"
+            target="_blank"
+            >Am chord</a
+          >
+        </li>
+        <li class="F">
+          <a
+            class="F"
+            href="https://www.piano-lessons-info.com/fmajorchord.html"
+            target="_blank"
+            >F chord</a
+          >
+        </li>
+      </ul>
+
+      <h3 class="practice">How to Practice Chords</h3>
+      <p>
+        Practice moving between these chords on the keyboard. Keep your hand in
+        the same shape. We like to call this fingering shape (1-3-5) “the Claw.”
+        <br /><br />
+        A great way to practice is by playing four C chords in a steady rhythm,
+        followed by four F chords and so on. You can gradually progress your way
+        through the sequence and speed up until your muscle memory starts to
+        kick in. <br /><br />Experiment with the order of things. These four
+        chords are going to sound great no matter how you choose to play them,
+        so switch things up and see what you can create.
+      </p>
+
+      <button>Trial lesson</button>
+
+      <h4>Click the button for free trail lesson</h4>
+      <p class="coder">
+        Coded by
+        <span>
+          <a
+            href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BDGI70sX6SiqOBZ6b%2BsKlpg%3D%3D"
+            target="_blank"
+            >Galaletsang Precious Mafoko</a
+          >
+        </span>
+      </p>
+
+      <script>
+        function bookLesson() {
+          let name = prompt("What is your name? ");
+          let age = prompt("How old are you? ");
+
+          if (age > 18){
+            let contacts = prompt("Please add your contact number:");
+          }else{
+            let contact = prompt("Please add your guadian's contact number: ");
+          }
+
+          let customer = document.querySelector("h4");
+          customer.innerHTML =
+            "Thank you " +
+            name +
+            " for your interest in the trial lesson, we will get back to you soon.";
+
+        }
+        let lesson = document.querySelector("button");
+        lesson.addEventListener("click", bookLesson);
+      </script>
+    </div>
+  </body>
+</html>
